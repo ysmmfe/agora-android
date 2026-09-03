@@ -1,19 +1,18 @@
-package com.ysmmfe.agora
+package com.ysmmfe.agora.widget
 
 import android.appwidget.AppWidgetManager
 import android.appwidget.AppWidgetProvider
 import android.content.Context
 import android.content.Intent
-import com.ysmmfe.agora.widget.WidgetUpdater
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class AgoraWidgetProvider : AppWidgetProvider() {
+class CompactWidgetProvider : AppWidgetProvider() {
     override fun onUpdate(context: Context, manager: AppWidgetManager, ids: IntArray) {
         val pending = goAsync()
         CoroutineScope(Dispatchers.IO).launch {
-            try { WidgetUpdater.updateFull(context, ids) } finally { pending.finish() }
+            try { WidgetUpdater.updateCompact(context, ids) } finally { pending.finish() }
         }
     }
 

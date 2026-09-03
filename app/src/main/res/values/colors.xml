@@ -12,4 +12,10 @@
     <color name="pink">#F355B1</color>
     <color name="day_selected">#DDF4F1ED</color>
     <color name="launcher_background">#1B2029</color>
+    <color name="app_background">#11131A</color>
+    <color name="card_background">#E51B1F29</color>
+    <color name="card_border">#2FFFFFFF</color>
+    <color name="muted">#AAB0C0</color>
+    <color name="success">#73D9A3</color>
+    <color name="danger">#FF7A86</color>
 </resources>
