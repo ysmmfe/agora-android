@@ -29,14 +29,14 @@
 
     <style name="WidgetAgendaRow">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_height">40dp</item>
         <item name="android:orientation">horizontal</item>
         <item name="android:gravity">center_vertical</item>
     </style>
 
     <style name="WidgetAgendaAccent">
         <item name="android:layout_width">5dp</item>
-        <item name="android:layout_height">36dp</item>
+        <item name="android:layout_height">33dp</item>
     </style>
 
     <style name="WidgetAgendaContent">
@@ -68,7 +68,7 @@
 
     <style name="WidgetTask">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">26dp</item>
+        <item name="android:layout_height">24dp</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:maxLines">1</item>
         <item name="android:ellipsize">end</item>
