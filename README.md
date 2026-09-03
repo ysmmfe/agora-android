@@ -4,9 +4,9 @@ Protótipo Android de um calendário semanal com foco no dia atual, criado para
 ser usado como widget na tela inicial e, em aparelhos Samsung compatíveis, na
 tela de bloqueio por meio do Good Lock + LockStar.
 
-Esta é a versão **0.1.0 — teste de compatibilidade**. Os compromissos e tarefas
-ainda são demonstrativos. Primeiro validamos aparência, dimensões e comportamento
-no Galaxy S23; depois conectamos o widget ao cadastro local de eventos.
+Esta é a versão **0.1.1 — ajuste para o LockStar**. A compatibilidade com o
+Galaxy S23 foi confirmada em aparelho real. Os compromissos e tarefas ainda são
+demonstrativos; esta versão corrige a altura e a transparência observadas no teste.
 
 ## O que já funciona
 
@@ -20,6 +20,8 @@ no Galaxy S23; depois conectamos o widget ao cadastro local de eventos.
 - botão no app para solicitar a adição à tela inicial;
 - suporte declarado às categorias `home_screen` e `keyguard`;
 - redimensionamento horizontal e vertical.
+- cartão visual limitado ao conteúdo, sem preencher a área vazia do LockStar;
+- compilação automática também em pull requests.
 
 ## Abrir e compilar no Android Studio
 
@@ -94,7 +96,7 @@ Anote ou tire uma captura de tela destes pontos:
 
 ## Próxima versão
 
-Depois do teste no aparelho, a versão 0.2 receberá:
+A versão 0.2 receberá:
 
 - banco local Room;
 - cadastro, edição e exclusão de compromissos;
