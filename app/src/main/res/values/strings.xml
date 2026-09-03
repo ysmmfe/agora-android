@@ -9,4 +9,5 @@
     <string name="lockstar_title">Como testar na tela de bloqueio</string>
     <string name="lockstar_steps">1. Instale Good Lock pela Galaxy Store.\n2. Dentro dele, instale e abra o LockStar.\n3. Ative a edição da tela de bloqueio.\n4. Toque na área de widgets e escolha Agora.\n5. Redimensione o widget até a semana e a agenda ficarem visíveis.</string>
     <string name="prototype_note">Nesta primeira versão, os compromissos são demonstrativos. O objetivo é validar tamanho, contraste, transparência e compatibilidade com o Galaxy S23 antes de adicionarmos cadastro e recorrências.</string>
+    <string name="compact_widget_description">Próximo compromisso e tarefas de hoje.</string>
 </resources>

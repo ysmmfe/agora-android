@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/compact_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_widget"
+    android:orientation="vertical"
+    android:padding="14dp">
+
+    <TextView
+        android:id="@+id/compact_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="1"
+        android:textColor="@color/white_70"
+        android:textSize="11sp" />
+    <TextView
+        android:id="@+id/compact_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+    <TextView
+        android:id="@+id/compact_next_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:maxLines="1"
+        android:textColor="@color/white_70"
+        android:textSize="12sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TAREFAS"
+        android:textColor="@color/white_70"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+    <TextView android:id="@+id/compact_task_1" style="@style/WidgetTask" />
+    <TextView android:id="@+id/compact_task_2" style="@style/WidgetTask" />
+</LinearLayout>

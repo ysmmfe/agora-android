@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/editor_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Novo item"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView style="@style/EditorLabel" android:text="TIPO" />
+        <Spinner
+            android:id="@+id/kind_spinner"
+            style="@style/EditorSpinner" />
+
+        <TextView style="@style/EditorLabel" android:text="TÍTULO" />
+        <EditText
+            android:id="@+id/title_input"
+            style="@style/EditorInput"
+            android:hint="Ex.: Cálculo II"
+            android:inputType="textCapSentences"
+            android:maxLines="2" />
+
+        <TextView style="@style/EditorLabel" android:text="OBSERVAÇÕES (OPCIONAL)" />
+        <EditText
+            android:id="@+id/notes_input"
+            style="@style/EditorInput"
+            android:hint="Detalhes rápidos"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines="3" />
+
+        <TextView style="@style/EditorLabel" android:text="DATA INICIAL" />
+        <TextView
+            android:id="@+id/start_date_button"
+            style="@style/EditorButton" />
+
+        <TextView style="@style/EditorLabel" android:text="HORÁRIO (OPCIONAL)" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/start_time_button"
+                style="@style/EditorButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Início" />
+            <TextView
+                android:id="@+id/end_time_button"
+                style="@style/EditorButton"
+                android:layout_width="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="Fim" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/clear_time_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="Limpar horários"
+            android:textColor="@color/muted"
+            android:textSize="13sp" />
+
+        <TextView style="@style/EditorLabel" android:text="CATEGORIA" />
+        <Spinner
+            android:id="@+id/category_spinner"
+            style="@style/EditorSpinner" />
+
+        <TextView style="@style/EditorLabel" android:text="REPETIÇÃO" />
+        <Spinner
+            android:id="@+id/recurrence_spinner"
+            style="@style/EditorSpinner" />
+
+        <LinearLayout
+            android:id="@+id/weekday_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <TextView style="@style/EditorLabel" android:text="DIAS DA SEMANA" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox android:id="@+id/day_1_check" style="@style/EditorDayCheck" android:text="S" />
+                <CheckBox android:id="@+id/day_2_check" style="@style/EditorDayCheck" android:text="T" />
+                <CheckBox android:id="@+id/day_3_check" style="@style/EditorDayCheck" android:text="Q" />
+                <CheckBox android:id="@+id/day_4_check" style="@style/EditorDayCheck" android:text="Q" />
+                <CheckBox android:id="@+id/day_5_check" style="@style/EditorDayCheck" android:text="S" />
+                <CheckBox android:id="@+id/day_6_check" style="@style/EditorDayCheck" android:text="S" />
+                <CheckBox android:id="@+id/day_7_check" style="@style/EditorDayCheck" android:text="D" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/end_repeat_check"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:buttonTint="@color/blue"
+            android:text="Definir data final da repetição"
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/end_repeat_button"
+            style="@style/EditorButton"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/save_button"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/bg_primary"
+            android:gravity="center"
+            android:text="Salvar"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/delete_button"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_danger"
+            android:gravity="center"
+            android:text="Excluir"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>
