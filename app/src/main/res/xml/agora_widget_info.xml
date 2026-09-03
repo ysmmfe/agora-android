@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/app_subtitle"
+    android:initialKeyguardLayout="@layout/agora_widget"
+    android:initialLayout="@layout/agora_widget"
+    android:minWidth="280dp"
+    android:minHeight="360dp"
+    android:minResizeWidth="250dp"
+    android:minResizeHeight="260dp"
+    android:previewLayout="@layout/agora_widget"
+    android:resizeMode="horizontal|vertical"
+    android:targetCellWidth="4"
+    android:targetCellHeight="6"
+    android:updatePeriodMillis="1800000"
+    android:widgetCategory="home_screen|keyguard" />

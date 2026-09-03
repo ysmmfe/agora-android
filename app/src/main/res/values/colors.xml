@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ink">#171A1F</color>
+    <color name="surface">#F7F3EE</color>
+    <color name="surface_dark">#D9171B20</color>
+    <color name="surface_widget">#B3151820</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_70">#B3FFFFFF</color>
+    <color name="blue">#5B8FF9</color>
+    <color name="ice">#C9ECF5</color>
+    <color name="coral">#FF8585</color>
+    <color name="pink">#F355B1</color>
+    <color name="day_selected">#DDF4F1ED</color>
+    <color name="launcher_background">#1B2029</color>
+</resources>

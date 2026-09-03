@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_widget"
+    android:orientation="vertical"
+    android:padding="14dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/day_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="4dp">
+            <TextView android:id="@+id/weekday_1" style="@style/WidgetWeekday" android:text="SEG" />
+            <TextView android:id="@+id/date_1" style="@style/WidgetDate" android:text="31" />
+            <TextView style="@style/WidgetEventBar" android:background="@drawable/bg_blue" />
+            <TextView style="@style/WidgetEventBar" android:background="@drawable/bg_ice" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="4dp">
+            <TextView android:id="@+id/weekday_2" style="@style/WidgetWeekday" android:text="TER" />
+            <TextView android:id="@+id/date_2" style="@style/WidgetDate" android:text="1" />
+            <TextView style="@style/WidgetEventBar" android:background="@drawable/bg_ice" />
+            <TextView style="@style/WidgetEventBar" android:background="@drawable/bg_coral" />
+            <TextView style="@style/WidgetEventBar" android:background="@drawable/bg_blue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="4dp">
+            <TextView android:id="@+id/weekday_3" style="@style/WidgetWeekday" android:text="QUA" />
+            <TextView android:id="@+id/date_3" style="@style/WidgetDate" android:text="2" />
+            <TextView style="@style/WidgetEventBar" android:background="@drawable/bg_coral" />
+            <TextView style="@style/WidgetEventBar" android:background="@drawable/bg_blue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="4dp">
+            <TextView android:id="@+id/weekday_4" style="@style/WidgetWeekday" android:text="QUI" />
+            <TextView android:id="@+id/date_4" style="@style/WidgetDate" android:text="3" />
+            <TextView style="@style/WidgetEventBar" android:background="@drawable/bg_ice" />
+            <TextView style="@style/WidgetEventBar" android:background="@drawable/bg_pink" />
+            <TextView style="@style/WidgetEventBar" android:background="@drawable/bg_coral" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="4dp">
+            <TextView android:id="@+id/weekday_5" style="@style/WidgetWeekday" android:text="SEX" />
+            <TextView android:id="@+id/date_5" style="@style/WidgetDate" android:text="4" />
+            <TextView style="@style/WidgetEventBar" android:background="@drawable/bg_blue" />
+            <TextView style="@style/WidgetEventBar" android:background="@drawable/bg_ice" />
+            <TextView style="@style/WidgetEventBar" android:background="@drawable/bg_coral" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="4dp">
+            <TextView android:id="@+id/weekday_6" style="@style/WidgetWeekday" android:text="SÁB" />
+            <TextView android:id="@+id/date_6" style="@style/WidgetDate" android:text="5" />
+            <TextView style="@style/WidgetEventBar" android:background="@drawable/bg_blue" />
+            <TextView style="@style/WidgetEventBar" android:background="@drawable/bg_pink" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/day_7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="4dp">
+            <TextView android:id="@+id/weekday_7" style="@style/WidgetWeekday" android:text="DOM" />
+            <TextView android:id="@+id/date_7" style="@style/WidgetDate" android:text="6" />
+            <TextView style="@style/WidgetEventBar" android:background="@drawable/bg_ice" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/widget_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="1"
+        android:text="HOJE"
+        android:textColor="@color/white_70"
+        android:textSize="11sp" />
+
+    <LinearLayout style="@style/WidgetAgendaRow">
+        <TextView style="@style/WidgetAgendaAccent" android:background="@drawable/bg_blue" />
+        <LinearLayout style="@style/WidgetAgendaContent">
+            <TextView style="@style/WidgetAgendaTitle" android:text="Cálculo Fundamental II" />
+            <TextView style="@style/WidgetAgendaTime" android:text="◷  08:00 – 10:00" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/WidgetAgendaRow">
+        <TextView style="@style/WidgetAgendaAccent" android:background="@drawable/bg_ice" />
+        <LinearLayout style="@style/WidgetAgendaContent">
+            <TextView style="@style/WidgetAgendaTitle" android:text="Planejamento do trabalho" />
+            <TextView style="@style/WidgetAgendaTime" android:text="◷  10:15" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/WidgetAgendaRow">
+        <TextView style="@style/WidgetAgendaAccent" android:background="@drawable/bg_pink" />
+        <LinearLayout style="@style/WidgetAgendaContent">
+            <TextView style="@style/WidgetAgendaTitle" android:text="Revisar Física II" />
+            <TextView style="@style/WidgetAgendaTime" android:text="◷  14:00" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/WidgetAgendaRow">
+        <TextView style="@style/WidgetAgendaAccent" android:background="@drawable/bg_coral" />
+        <LinearLayout style="@style/WidgetAgendaContent">
+            <TextView style="@style/WidgetAgendaTitle" android:text="Treino" />
+            <TextView style="@style/WidgetAgendaTime" android:text="◷  18:30" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="TAREFAS"
+        android:textColor="@color/white_70"
+        android:textSize="11sp" />
+
+    <TextView style="@style/WidgetTask" android:text="☐  Fazer lista de Cálculo" />
+    <TextView style="@style/WidgetTask" android:text="☐  Organizar a próxima semana" />
+
+</LinearLayout>

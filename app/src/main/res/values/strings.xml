@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Agora</string>
+    <string name="app_subtitle">Sua semana e o que importa hoje.</string>
+    <string name="prototype_badge">PROTÓTIPO DE COMPATIBILIDADE</string>
+    <string name="widget_preview">Prévia do widget</string>
+    <string name="add_widget">Adicionar widget à tela inicial</string>
+    <string name="pin_not_supported">Seu launcher não aceita adicionar widgets automaticamente. Use o seletor de widgets do sistema.</string>
+    <string name="lockstar_title">Como testar na tela de bloqueio</string>
+    <string name="lockstar_steps">1. Instale Good Lock pela Galaxy Store.\n2. Dentro dele, instale e abra o LockStar.\n3. Ative a edição da tela de bloqueio.\n4. Toque na área de widgets e escolha Agora.\n5. Redimensione o widget até a semana e a agenda ficarem visíveis.</string>
+    <string name="prototype_note">Nesta primeira versão, os compromissos são demonstrativos. O objetivo é validar tamanho, contraste, transparência e compatibilidade com o Galaxy S23 antes de adicionarmos cadastro e recorrências.</string>
+</resources>
